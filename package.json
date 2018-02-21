@@ -1,0 +1,27 @@
+{
+  "name": "file-combiner",
+  "version": "0.1.0",
+  "description": "A package that combines strings as if they were files being trated by the C preprocessor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jisbruzzi/file-combiner.git"
+  },
+  "keywords": [
+    "include",
+    "C",
+    "preprocessor",
+    "combine",
+    "mix",
+    "merge"
+  ],
+  "author": "jisbruzzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jisbruzzi/file-combiner/issues"
+  },
+  "homepage": "https://github.com/jisbruzzi/file-combiner#readme"
+}
