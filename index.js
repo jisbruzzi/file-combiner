@@ -42,14 +42,14 @@ function buildFile(name,history){
         let myPosition=history.indexOf(name);
         let relevantHistory=history.splice(myPosition,history.length);
         let messagePart = relevantHistory.concat([name]).join(" --> ")
-        throw new Error("gulp-includer: Cyclic reference: "+messagePart)
+        throw new Error("Cyclic reference: "+messagePart)
     }
     let nextHistory=history.concat([name])
 
     //check that all includes are OK
     for(let f of this.includedFiles(name)){
         if(this.getFile(f.absolute)==undefined){
-            throw new Error("gulp-includer: Cannot include "+f.relative+" in file "+name+": gulp includer didn´t receive the file "+f.absolute);
+            throw new Error("Cannot include "+f.relative+" in file "+name+": gulp includer didn´t receive the file "+f.absolute);
         }
     }
 
@@ -113,7 +113,7 @@ module.exports=function(includeGetter){
     function combinedFiles(){
         //if there are no root files, there are cycles
         if(this.includedByNone().length==0){
-            throw new Error("gulp-includer: all files are included by other files")
+            throw new Error("all files are included by other files")
         }
 
         //build the final files
