@@ -1,6 +1,6 @@
 {
   "name": "file-combiner",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A package that combines strings as if they were files being trated by the C preprocessor.",
   "main": "index.js",
   "scripts": {
